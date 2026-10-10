@@ -66,6 +66,7 @@ that change how you work:
 | `/fk-refresh-urls` | Refresh expired signed media URLs |
 | `/fk-doctor` | Diagnose errors + prescribe fixes (Flow/extension/worker/YT) |
 | `/fk-add-material` | Set image material style |
+| `/fk-hand-drawn-style` | Hand-drawn style pack: 18 `hd_*` materials + how to prompt them |
 | `/fk-change-model` | Change video/image model |
 | `/fk-change-provider` | View & switch the AI CLI, model and effort per role (claude/agy/codex) |
 | `/fk-insert-scene` | Insert scenes into chain |

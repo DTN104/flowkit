@@ -95,6 +95,7 @@ This project has reusable skills in `skills/`. When the user says `/fk-<name>`, 
 | `/fk-creative-mix` | Creative video mixing — combine techniques for cinematic results. |
 | `/fk-dashboard` | Show live GLA status in Claude Code statusline. |
 | `/fk-doctor` | Diagnose any FlowKit error and prescribe a fix. Knows the full error taxonomy across Google Flow, the Chrome extension, the FastAPI layer, the worker, and the YouTube upload pipeline. |
+| `/fk-drive-upload` | Upload the project's final video(s) to Google Drive via rclone. |
 | `/fk-fix-uuids` | Find and fix any non-UUID media_ids (CAMS... format) across all scenes and entities. |
 | `/fk-gen-chain-videos` | Generate videos with automatic scene chaining (start+end frame transitions). |
 | `/fk-gen-images` | Generate scene images for all scenes in a video. |
@@ -104,6 +105,7 @@ This project has reusable skills in `skills/`. When the user says `/fk-<name>`, 
 | `/fk-gen-text-overlays` | fk-gen-text-overlays — Generate Text Overlays from Narrator Text |
 | `/fk-gen-tts-template` | fk-gen-tts-template — Generate Voice Template |
 | `/fk-gen-videos` | Generate videos for all scenes in a video. |
+| `/fk-hand-drawn-style` | fk-hand-drawn-style — Hand-Drawn Style Pack (18 image materials) |
 | `/fk-import-voice` | fk-import-voice — Import Existing Voice as Template |
 | `/fk-insert-scene` | Insert new scene(s) into an existing video chain — for multi-angle shots, cutaways, or close-ups. |
 | `/fk-monitor` | fk-monitor — Full Pipeline Monitor |

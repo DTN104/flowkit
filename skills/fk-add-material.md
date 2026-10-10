@@ -32,6 +32,8 @@ The `scene_prefix` is baked into each scene's `prompt` field when the scene is c
 | `lego` | LEGO | Minifigure characters, brick-built worlds, ABS plastic |
 | `retro_vhs` | Retro VHS | 1980s analog VHS, scan lines, CRT curvature, warm grain |
 
+> **Hand-drawn pack (local addition):** 18 more materials with ids `hd_*` (xkcd stick figures, kid crayon, MS Paint, ink wash, pixel art, Nordic storybook, ...) — register once with `scripts/fk_hand_drawn_materials.sh`, pick one via `/fk-hand-drawn-style`.
+
 ---
 
 ## List All Materials

@@ -33,3 +33,8 @@ flow_session_project.json
 scratch/
 
 series_manifest.json
+client_secret*.json
+.DS_Store
+.idea/
+.fuse_hidden*
+venv/
