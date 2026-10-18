@@ -38,6 +38,22 @@ if TYPE_CHECKING:
     from agent.services.flow_client import FlowClient
     from agent.sdk.persistence.base import Repository
 
+
+def _build_continuation_prompt(base_prompt: str) -> str:
+    """Build a transformation-focused prompt for CONTINUATION scene images.
+
+    When editing from a parent image, the default prompt just describes the
+    child scene statically — the edit API preserves the parent's composition.
+    This helper prepends transformation instructions so the AI actually
+    changes camera angle, location, and setup.
+    """
+    return (
+        f"Transform this image into a completely different moment. "
+        f"Move the camera to a new angle, position, and composition. "
+        f"Change the surrounding environment and visual setup. "
+        f"{base_prompt}"
+    )
+
 logger = logging.getLogger(__name__)
 
 # Entity types that need landscape (wide) reference images

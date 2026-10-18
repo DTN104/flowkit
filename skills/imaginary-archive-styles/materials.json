@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "channel": "Imaginary Archive (@ImaginaryArchives)",
+    "created": "2026-10-18",
+    "notes": "Local cinematic 3D style pack for Imaginary Archive (What If + AI Mystery, English). Seeds: twri/sdxl_prompt_styler (MIT) entries sai-3d-model, sai-cinematic, misc-space, photo-film noir; rewritten with lighting/lens language in the spirit of 0xhughs/director-skills (MIT). Palette nods to the channel logo (deep navy + brass/amber). Register with POST /api/materials."
+  },
+  "materials": [
+    {
+      "id": "ia_epic_cg",
+      "name": "IA Epic Blockbuster CG",
+      "style_instruction": "Epic 3D cinematic CG render in the style of a big-budget blockbuster film, Unreal Engine 5 quality, physically based materials, highly detailed yet clean composition with one dominant focal subject and a strong sense of colossal scale. Volumetric god rays, atmospheric haze and depth fog, dramatic rim lighting, anamorphic lens look with subtle horizontal flares, shallow depth of field. Rich teal-and-amber color grade with deep navy shadows and warm golden highlights.",
+      "negative_prompt": "NOT cartoon, NOT anime, NOT chibi, NOT cute, NOT flat illustration, NOT hand-drawn, NOT low-poly, NOT plastic toy look, NOT oversaturated, NOT cluttered.",
+      "scene_prefix": "Epic 3D cinematic CG film still, Unreal Engine 5, colossal scale, volumetric light and haze, anamorphic lens, teal-and-amber grade:",
+      "lighting": "Dramatic rim light with volumetric god rays through atmospheric haze, warm amber key against deep navy shadows"
+    },
+    {
+      "id": "ia_cosmic",
+      "name": "IA Cosmic IMAX",
+      "style_instruction": "Awe-inspiring cinematic space-epic visual, IMAX documentary meets science-fiction blockbuster, photoreal CG planets and moons with accurate lighting and crisp surface detail, vast cosmic scale with tiny human-scale elements for reference. Deep black space, glowing nebula tones of navy, violet and amber, soft bloom on bright light sources, ultra-wide lens perspective, majestic and quiet.",
+      "negative_prompt": "NOT cartoon, NOT anime, NOT chibi, NOT flat illustration, NOT hand-drawn, NOT cheesy clip-art space, NOT oversaturated rainbow nebula, NOT cluttered with stars.",
+      "scene_prefix": "Cinematic IMAX space-epic still, photoreal CG celestial bodies, vast scale, ultra-wide lens, soft bloom, navy-violet-amber palette:",
+      "lighting": "Hard directional sunlight with soft bloom, deep black space, faint glowing nebula fill light"
+    },
+    {
+      "id": "ia_mystery_dark",
+      "name": "IA Dark Mystery",
+      "style_instruction": "Moody 3D cinematic mystery thriller look, photoreal CG with a slightly surreal, uncanny atmosphere, low-key lighting, thick drifting fog and mist, desaturated cold blue-grey palette with a single warm amber light source as the focal accent. Deep shadows, silhouettes, wet reflective surfaces, slow-burn suspense, the feeling that something impossible is quietly wrong. Shallow depth of field, subtle film grain.",
+      "negative_prompt": "NOT cartoon, NOT anime, NOT chibi, NOT cute, NOT bright cheerful colors, NOT horror gore, NOT flat illustration, NOT hand-drawn, NOT cluttered.",
+      "scene_prefix": "Moody 3D cinematic mystery-thriller still, photoreal CG, low-key light, drifting fog, cold blue-grey palette with one warm amber accent:",
+      "lighting": "Low-key cold blue ambient light with a single warm amber practical light, fog catching the beams"
+    },
+    {
+      "id": "ia_photoreal_vfx",
+      "name": "IA Photoreal VFX",
+      "style_instruction": "Hyper-realistic live-action film frame with seamless high-end VFX, as if shot on an ARRI Alexa 65 with anamorphic lenses for a prestige science-fiction movie. Real-world textures, natural skin and materials, believable physics, impossible event integrated photorealistically into an ordinary real place. Cinematic color grade, gentle film grain, natural lens imperfections, motivated lighting.",
+      "negative_prompt": "NOT cartoon, NOT anime, NOT chibi, NOT 3D-render plastic look, NOT video game graphics, NOT flat illustration, NOT hand-drawn, NOT oversaturated.",
+      "scene_prefix": "Hyper-realistic live-action sci-fi film frame, ARRI Alexa 65 anamorphic, seamless VFX, cinematic grade, gentle film grain:",
+      "lighting": "Motivated natural light with cinematic contrast, soft practical highlights"
+    }
+  ]
+}
