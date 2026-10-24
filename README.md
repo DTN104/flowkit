@@ -32,6 +32,37 @@
 
 ---
 
+> **Bản fork này** ([`DTN104/flowkit`](https://github.com/DTN104/flowkit)) dựa trên
+> [`crisng95/flowkit`](https://github.com/crisng95/flowkit), thêm:
+>
+> - **Hand-drawn style pack** — 18 material `hd_*` (Ghibli, chì màu, màu nước…), xem
+>   [`skills/fk-hand-drawn-style.md`](skills/fk-hand-drawn-style.md). Cài vào agent:
+>   `scripts/fk_hand_drawn_materials.sh`.
+> - **Imaginary Archives style pack** — material 3D cinematic,
+>   [`skills/imaginary-archive-styles/materials.json`](skills/imaginary-archive-styles/materials.json).
+> - **Upload Google Drive** — `/fk-drive-upload` dùng rclone
+>   ([`scripts/fk_drive_upload.sh`](scripts/fk_drive_upload.sh)).
+> - **`run.sh`** — chạy agent một lệnh, tự đọc `.env`.
+> - Sửa lỗi reCAPTCHA khi tab Flow vừa mở (`extension/injected.js`) và khôi phục
+>   prompt nối cảnh (`_build_continuation_prompt`).
+> - Hướng dẫn tiếng Việt: [`HUONG_DAN_PROJECT_MOI.md`](HUONG_DAN_PROJECT_MOI.md).
+>
+> **Bắt đầu nhanh:**
+>
+> ```bash
+> ./setup.sh                 # venv + dependencies + ffmpeg
+> python setup.py            # tạo các lệnh /fk-* (vd. --tool claude)
+> cp .env.example .env       # điền FLOW_PROJECT_ID (uuid project tạo trên flow.google.com)
+> # Chrome → chrome://extensions → Developer mode → Load unpacked → extension/
+> # mở https://flow.google.com/, đăng nhập, để nguyên tab
+> ./run.sh
+> ```
+>
+> Không có trong repo (mỗi người tự tạo): `.env`, `venv/`, `tts-venv/` (OmniVoice TTS),
+> token YouTube trong `youtube/channels/`, `client_secret*.json`, cấu hình rclone.
+
+---
+
 # FLOW KIT
 
 Standalone system to generate AI videos via Google Flow. Uses a Chrome extension as a browser bridge: it mints reCAPTCHA and runs Flow's batchexecute RPCs inside a signed-in `flow.google.com` tab, which is the only place they can be signed.

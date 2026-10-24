@@ -1,4 +1,4 @@
-khoan# Flow Kit — Hướng dẫn tạo project video mới
+# Flow Kit — Hướng dẫn tạo project video mới
 
 Áp dụng cho repo `~/Work/flowkit` (commit `cd9f156`, 25/09/2026). Mỗi lần làm video mới thì đi từ Bước 0 đến Bước 8. Nếu chỉ quay lại project cũ, xem Bước 9.
 
@@ -6,7 +6,7 @@ khoan# Flow Kit — Hướng dẫn tạo project video mới
 
 Mỗi project trong Flow Kit ứng với **một project trên Google Flow**, và ID của project Flow Kit **chính là UUID** của project Flow đó. Mọi request (ảnh, video) của project sẽ tự bắn vào đúng project Flow của nó.
 
-Vì vậy làm project mới thì **không cần sửa `run.sh`**. Biến `FLOW_PROJECT_ID` trong `run.sh` chỉ là giá trị dự phòng cho các lệnh không truyền project. Cứ để nguyên, project cũ vẫn chạy bình thường.
+Vì vậy làm project mới thì **không cần sửa `run.sh`**. Biến `FLOW_PROJECT_ID` (đặt trong `.env`, hoặc mặc định trong `run.sh`) chỉ là giá trị dự phòng cho các lệnh không truyền project. Cứ để nguyên, project cũ vẫn chạy bình thường.
 
 ```
 Flow project (UUID) ──┬── Nhân vật / bối cảnh / đạo cụ  → ảnh tham chiếu (ref)

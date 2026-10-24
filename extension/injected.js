@@ -160,7 +160,17 @@ async function executeWithRetry(sitekey, action, attempts = 2) {
     try {
       // Path 1: pristine execute captured by hijack_bypass.js
       if (hasPristine) {
-        const token = await executeWithPristine(sitekey, action);
+        let token;
+        try {
+          token = await executeWithPristine(sitekey, action);
+        } catch (e) {
+          // The page has not rendered a client for this key yet (fresh tab,
+          // Flow initialises reCAPTCHA lazily) — render our own and execute
+          // against its widget id instead of the bare key.
+          if (!/not loaded in api\.js|Invalid site key/.test(e?.message || '')) throw e;
+          const widgetId = await ensureWidget(sitekey);
+          token = await executeWithPristine(widgetId, action);
+        }
         if (token) return token;
         lastErr = new Error('pristine_empty_token');
         // Fall through to retry

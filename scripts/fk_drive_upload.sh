@@ -53,7 +53,7 @@ else
     || die 3 "project '$pid' not found (or agent not running)"
   slug="$(printf '%s' "$od" | json slug)"
   outdir="$(printf '%s' "$od" | json path)"
-  for f in "$outdir/${slug}_narrator_cut.mp4" "$outdir/${slug}_final.mp4";
+  for f in "$outdir/${slug}_narrator_cut.mp4" "$outdir/${slug}_final.mp4"; do
     if [[ -f "$f" ]]; then files+=("$f"); fi
   done
   [[ ${#files[@]} -gt 0 ]] \
